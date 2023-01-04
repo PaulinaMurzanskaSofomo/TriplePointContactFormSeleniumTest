@@ -42,7 +42,11 @@ Complete comments field
     sleep    0.5s
 
 Confirm privacy policy
-   click element    ${ConfirmPolicyCheckbox}
+   element attribute value should be    ${ConfirmPolicyCheckboxInput}    value
+   ...    false
+   click element    ${ConfirmPolicyCheckboxBtn}
+   element attribute value should be    ${ConfirmPolicyCheckboxInput}    value
+   ...    true
    sleep    1s
 
 Submit form

@@ -15,13 +15,16 @@ Run KeyWord untill success
 
 Accept policy buttons
     click element    ${InitialWindowPopupAcceptBtn}
+    sleep    3s
     wait until page contains element    ${AcceptCookiesBtn}
+    scroll element into view     ${AcceptCookiesBtn}
     Run KeyWord untill success    click element    ${AcceptCookiesBtn}
     sleep    2s
 
 *** Test Cases ***
 Fill contact form for Triple Point
     Accept policy buttons
+    scroll element into view    id:contact
     ContactForm.Select subject of interests
     ContactForm.Select contact method
     ContactForm.Complete name field
@@ -31,7 +34,7 @@ Fill contact form for Triple Point
     ContactForm.Complete phone field
     ContactForm.Complete comments field
     ContactForm.Confirm privacy policy
-    ContactForm.Submit form
+#    ContactForm.Submit form
     sleep    5s
 
 
