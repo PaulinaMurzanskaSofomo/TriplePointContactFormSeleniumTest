@@ -19,4 +19,5 @@ ConfirmPolicyCheckboxInput = 'xpath://*[@id="blockWrapper1377_0_0_1370_0_0"]/div
                              '/div[4]/label/input '
 FormSubmitBtn = "id:cpFormSubmit1370"
 SubmitMessageDiv = 'xpath://*[@id="cpForm1370"]/div[2]'
+SubmitMessageParagraph = 'xpath://*[@id="cpForm1370"]/div[2]/p'
 SubmitMessage = "Form Submitted Successfully!"

@@ -15,11 +15,11 @@ Run KeyWord untill success
 
 Accept policy buttons
     click element    ${InitialWindowPopupAcceptBtn}
-    sleep    3s
+    sleep    1s
     wait until page contains element    ${AcceptCookiesBtn}
     scroll element into view     ${AcceptCookiesBtn}
     Run KeyWord untill success    click element    ${AcceptCookiesBtn}
-    sleep    2s
+    sleep    3s
 
 *** Test Cases ***
 Fill contact form for Triple Point
@@ -27,15 +27,11 @@ Fill contact form for Triple Point
     scroll element into view    id:contact
     ContactForm.Select subject of interests
     ContactForm.Select contact method
-    ContactForm.Complete name field
-    ContactForm.Complete last name field
-    ContactForm.Complete company field
-    ContactForm.Complete email field
-    ContactForm.Complete phone field
-    ContactForm.Complete comments field
+    ContactForm.Complete input fields
     ContactForm.Confirm privacy policy
-#    ContactForm.Submit form
-    sleep    5s
+    ContactForm.Submit form
+    ContactForm.Verify if form was submitted
+    sleep    2s
 
 
 

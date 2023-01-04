@@ -17,27 +17,17 @@ Select contact method
     sleep    1s
     click element    ${ContactByEmailMethod}
 
-Complete name field
+Complete input fields
     input text   ${NameInput}    ${form_fill_data.name}
     sleep    0.5s
-
-Complete last name field
     input text   ${LastNameInput}    ${form_fill_data.lastName}
     sleep    0.5s
-
-Complete company field
     input text   ${CompanyNameInput}    ${form_fill_data.company}
     sleep    0.5s
-
-Complete email field
     input text   ${EmailAddressInput}    ${form_fill_data.email}
     sleep    0.5s
-
-Complete phone field
     input text   ${PhoneInput}    ${form_fill_data.tel}
     sleep    0.5s
-
-Complete comments field
     input text   ${CommentsInput}   ${form_fill_data.comment}
     sleep    0.5s
 
@@ -53,7 +43,8 @@ Submit form
    click element    ${FormSubmitBtn}
 
 Verify if form was submitted
+   wait until page contains element    ${SubmitMessageDiv}
    page should contain element    ${SubmitMessageDiv}
-   element should contain    ${SubmitMessage}
+   element should contain    ${SubmitMessageParagraph}    ${SubmitMessage}
 
 
