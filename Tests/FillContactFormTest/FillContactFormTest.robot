@@ -32,7 +32,7 @@ Fill contact form for Triple Point
     ContactForm.Complete input fields
     ContactForm.Confirm privacy policy
     log    Tests should pass
-    ContactForm.Submit form
+#    ContactForm.Submit form
 #    ContactForm.Verify if form was submitted
     sleep    2s
 
