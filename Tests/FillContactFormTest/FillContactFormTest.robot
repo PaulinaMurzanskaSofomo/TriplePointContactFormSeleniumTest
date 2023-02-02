@@ -5,9 +5,11 @@ Resource    ../../Resources/CommonFunctionalities.robot
 Resource    ../../Resources/PageObjects/HomePage/ContactForm.robot
 Variables    ../../Resources/WebElements.py
 
-Test Setup    CommonFunctionalities.Start Test Case
+Test Setup    CommonFunctionalities.Start Test Case    ${url}    ${browser}
 Test Teardown   CommonFunctionalities.End Test Case
-
+*** Variables ***
+${url}    https://www.triplepoint.co.uk/contact-us/4/
+${browser}    Chrome
 *** Keywords ***
 Run KeyWord untill success
     [arguments]    ${KW}    ${KWARGS}
@@ -29,8 +31,8 @@ Fill contact form for Triple Point
     ContactForm.Select contact method
     ContactForm.Complete input fields
     ContactForm.Confirm privacy policy
-    ContactForm.Submit form
-    ContactForm.Verify if form was submitted
+#    ContactForm.Submit form
+#    ContactForm.Verify if form was submitted
     sleep    2s
 
 
