@@ -31,6 +31,7 @@ Fill contact form for Triple Point
     ContactForm.Select contact method
     ContactForm.Complete input fields
     ContactForm.Confirm privacy policy
+    log    Tests should pass
 #    ContactForm.Submit form
 #    ContactForm.Verify if form was submitted
     sleep    2s
