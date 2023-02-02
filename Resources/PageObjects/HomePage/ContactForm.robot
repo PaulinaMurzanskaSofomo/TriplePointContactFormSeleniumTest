@@ -4,7 +4,7 @@ Variables    ../../WebElements.py
 
 *** Variables ***
 &{form_fill_data}    name=John    lastName=Smith    company=World.inc
-                     ...    email=world@world.com    tel=0044 999 888 777
+                     ...    email=world@orld.com    tel=0044 999 888 777
                      ...    comment=Hello, this is QA Sofomo test
 
 

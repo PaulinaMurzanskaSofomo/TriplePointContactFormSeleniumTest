@@ -2,11 +2,12 @@
 Library    SeleniumLibrary
 
 *** Variables ***
-${url}    https://www.triplepoint.co.uk/contact-us/4/
-${browser}    Chrome
+#${url}    https://www.triplepoint.co.uk/contact-us/4/
+#${browser}    Chrome
 
 *** Keywords ***
 Start Test Case
+    [arguments]    ${url}    ${browser}
     open browser    ${url}    ${browser}
     maximize browser window
     sleep    1s
