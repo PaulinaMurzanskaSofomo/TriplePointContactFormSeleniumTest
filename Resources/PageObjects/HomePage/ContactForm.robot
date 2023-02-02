@@ -21,17 +21,17 @@ Select contact method
 
 Complete input fields
     input text   ${NameInput}    ${form_fill_data.name}
-    sleep    0.5s
+
     input text   ${LastNameInput}    ${form_fill_data.lastName}
-    sleep    0.5s
+
     input text   ${CompanyNameInput}    ${form_fill_data.company}
-    sleep    0.5s
+
     input text   ${EmailAddressInput}    ${form_fill_data.email}
-    sleep    0.5s
+
     input text   ${PhoneInput}    ${form_fill_data.tel}
-    sleep    0.5s
+
     input text   ${CommentsInput}   ${form_fill_data.comment}
-    sleep    0.5s
+
 
 Confirm privacy policy
    element attribute value should be    ${ConfirmPolicyCheckboxInput}    value
